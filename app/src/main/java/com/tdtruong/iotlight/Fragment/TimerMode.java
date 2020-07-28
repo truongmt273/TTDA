@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.TimePicker;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -14,13 +16,17 @@ import com.tdtruong.iotlight.R;
 public class TimerMode  extends Fragment {
     public TimerMode(){}
 
+    View view;
+
+    private Button btnSetTime;
+    private TimePicker timePicker;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         super.onCreateView(inflater, container, savedInstanceState);
 
-        View view = inflater.inflate(R.layout.fragment_timer_mode, container, false);
+        view = inflater.inflate(R.layout.fragment_timer_mode, container, false);
 
         addControls();
         addEvents();
@@ -33,6 +39,7 @@ public class TimerMode  extends Fragment {
     }
 
     private void addControls() {
-
+        btnSetTime = view.findViewById(R.id.btnSetTime);
+        timePicker = view.findViewById(R.id.timePicker);
     }
 }

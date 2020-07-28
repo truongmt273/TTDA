@@ -3,8 +3,9 @@
 
     <!-- Device Activity -->
     <string name="device_id">Device name</string>
-    <string name="temperature">25°C</string>
-    <string name="humidity">50 %</string>
+    <string name="temperature">°C</string>
+    <string name="humidity">%</string>
+    <string name="speaker">dB</string>
 
 
     <!-- Device Item -->

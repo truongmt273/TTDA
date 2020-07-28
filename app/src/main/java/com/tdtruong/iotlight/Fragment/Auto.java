@@ -43,6 +43,7 @@ public class Auto extends Fragment {
     }
 
     private void addEvents() {
+        //Handle switch Auto on/off
         swAuto.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
@@ -53,6 +54,14 @@ public class Auto extends Fragment {
                 }
             }
         });
+
+        //Handle click button Apply
+        btnApply.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
     }
 
     private void addControls() {
@@ -61,5 +70,6 @@ public class Auto extends Fragment {
         etMedium = view.findViewById(R.id.auto_etHigh);
         etHigh = view.findViewById(R.id.auto_etHigh);
         etXHigh = view.findViewById(R.id.auto_etHigh);
+        btnApply = view.findViewById(R.id.auto_btnApply);
     }
 }

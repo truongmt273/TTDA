@@ -1,25 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<androidx.appcompat.widget.LinearLayoutCompat
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:orientation="vertical">
 
     <TimePicker
+        android:layout_weight="2"
         android:id="@+id/timePicker"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
-    <Switch
-        android:id="@+id/swAuto"
+    <Button
+        android:id="@+id/btnSetTime"
+        android:layout_gravity="center"
+        android:layout_weight="1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@id/timePicker"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="-50dp"
-        android:checked="true"
-        android:switchMinWidth="56dp"
-        android:text="Setup"
-        android:textOff="OFF"
-        android:textOn="ON"
-        android:textSize="40sp" />
+        android:text="Set Time"/>
 
-</RelativeLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

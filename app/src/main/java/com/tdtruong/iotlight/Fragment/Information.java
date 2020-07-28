@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -20,9 +22,13 @@ public class Information  extends Fragment {
     public Information(){}
 
     View view;
-    private static RecyclerView rvListDevice;
-    private static ArrayList<Device> mDevices;
-    private static DeviceAdapter mDeviceAdapter;
+    private RecyclerView rvListDevice;
+    private ArrayList<Device> mDevices;
+    private DeviceAdapter mDeviceAdapter;
+
+    private TextView txtTemp;
+    private TextView txtHumi;
+    private TextView txtSpeaker;
 
     @Nullable
     @Override
@@ -42,6 +48,8 @@ public class Information  extends Fragment {
     }
 
     private void addControls() {
-
+        txtTemp = view.findViewById(R.id.txt_temperature);
+        txtHumi = view.findViewById(R.id.txt_humidity);
+        txtSpeaker = view.findViewById(R.id.txt_speaker);
     }
 }

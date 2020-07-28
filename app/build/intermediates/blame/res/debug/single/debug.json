@@ -100,6 +100,10 @@
         "source": "H:\\HK192\\TTDADN\\IoT_Lightt\\iot-light\\IoTLight\\app\\src\\main\\res\\drawable\\humedity.jpg"
     },
     {
+        "merged": "H:\\HK192\\TTDADN\\IoT_Lightt\\iot-light\\IoTLight\\app\\build\\intermediates\\res\\merged\\debug\\drawable_speaker.png.flat",
+        "source": "H:\\HK192\\TTDADN\\IoT_Lightt\\iot-light\\IoTLight\\app\\src\\main\\res\\drawable\\speaker.png"
+    },
+    {
         "merged": "H:\\HK192\\TTDADN\\IoT_Lightt\\iot-light\\IoTLight\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
         "source": "H:\\HK192\\TTDADN\\IoT_Lightt\\iot-light\\IoTLight\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },

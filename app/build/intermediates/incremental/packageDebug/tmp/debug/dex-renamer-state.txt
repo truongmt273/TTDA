@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-#Mon Jul 20 11:24:37 ICT 2020
+#Wed Jul 22 00:05:02 ICT 2020
 base.0=H\:\\HK192\\TTDADN\\IoT_Lightt\\iot-light\\IoTLight\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
-=======
-#Fri Jun 19 10:24:28 ICT 2020
-base.0=E\:\\Android\\iot-light\\IoTLight\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
->>>>>>> 3ab82be66870b6f2c9b9f658bc93716379c76756
 path.0=classes.dex
 renamed.0=classes.dex

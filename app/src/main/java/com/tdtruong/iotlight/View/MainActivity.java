@@ -44,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-<<<<<<< HEAD
         setContentView(R.layout.activity_main);
 
 //        mDevices = new ArrayList<>();
@@ -53,7 +52,6 @@ public class MainActivity extends AppCompatActivity {
         addControls();
 
         addEvents();
-=======
         //setContentView(R.layout.activity_main);
         //setContentView(R.layout.device_activity);
 
@@ -61,7 +59,6 @@ public class MainActivity extends AppCompatActivity {
         //addEvents();
         Log.w("go inside","a");
         startMQTT();
->>>>>>> 3ab82be66870b6f2c9b9f658bc93716379c76756
     }
 
     private void addControls() {
@@ -83,12 +80,6 @@ public class MainActivity extends AppCompatActivity {
 //        rvListDevice.setLayoutManager(new LinearLayoutManager(MainActivity.this));
     }
 
-    private void creatDeviceList() {
-        Device mDevice1 = new Device("Device1",25,30);
-        Device mDevice2 = new Device("Device2",35,40);
-        mDevices.add(mDevice1);
-        mDevices.add(mDevice2);
-    }
 
     private void addEvents() {
 
@@ -160,7 +151,7 @@ public class MainActivity extends AppCompatActivity {
                             float temperature = Float.parseFloat(str_temp);
                             float humidity = Float.parseFloat(str_humi);
 
-                            mDevices.add(new Device(device_id,temperature,humidity));
+
                         }
 
                         //dataReceived.setText("Receive: " + dataInput);

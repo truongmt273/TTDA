@@ -4,10 +4,112 @@
     android:layout_height="match_parent">
 
     <TextView
+        android:text="Date"
+        android:textSize="20sp"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="20dp"
-        android:id="@+id/tvDeviceName"
+        android:id="@+id/tvDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textSize="20sp"
+            android:text="Max"
+            android:layout_width="40dp"
+            android:layout_height="30dp"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:src="@drawable/temperature"/>
+
+        <TextView
+            android:id="@+id/tv_maxTemp"
+            android:text="30 C"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textSize="20sp"
+            android:text="Min"
+            android:layout_width="40dp"
+            android:layout_height="30dp"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:src="@drawable/temperature"/>
+
+        <TextView
+            android:id="@+id/tv_minTemp"
+            android:text="30 C"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textSize="20sp"
+            android:text="Max"
+            android:layout_width="40dp"
+            android:layout_height="30dp"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:src="@drawable/humedity"/>
+
+        <TextView
+            android:id="@+id/tv_maxHumi"
+            android:text="30 %"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textSize="20sp"
+            android:text="Min"
+            android:layout_width="40dp"
+            android:layout_height="30dp"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:src="@drawable/humedity"/>
+
+        <TextView
+            android:id="@+id/tv_minHumi"
+            android:text="30 %"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"/>
+    </LinearLayout>
 
 </LinearLayout>

@@ -2,15 +2,61 @@ package com.tdtruong.iotlight.Model;
 
 public class Device {
     private String id;
-//    private String position;
     private float temperature;
     private float humidity;
 
-    public Device(String id, float temperature, float humidity) {
-        this.id = id;
-//        this.position = position;
-        this.temperature = temperature;
-        this.humidity = humidity;
+    private float maxTemp;
+    private float minTemp;
+    private float maxHumi;
+    private float minHumi;
+    private String date;
+
+    public float getMaxTemp() {
+        return maxTemp;
+    }
+
+    public void setMaxTemp(float maxTemp) {
+        this.maxTemp = maxTemp;
+    }
+
+    public float getMinTemp() {
+        return minTemp;
+    }
+
+    public void setMinTemp(float minTemp) {
+        this.minTemp = minTemp;
+    }
+
+    public float getMaxHumi() {
+        return maxHumi;
+    }
+
+    public void setMaxHumi(float maxHumi) {
+        this.maxHumi = maxHumi;
+    }
+
+    public float getMinHumi() {
+        return minHumi;
+    }
+
+    public void setMinHumi(float minHumi) {
+        this.minHumi = minHumi;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public Device(float maxTemp, float minTemp, float maxHumi, float minHumi, String date) {
+        this.maxTemp = maxTemp;
+        this.minTemp = minTemp;
+        this.maxHumi = maxHumi;
+        this.minHumi = minHumi;
+        this.date = date;
     }
 
     public String getId() {
@@ -20,14 +66,6 @@ public class Device {
     public void setId(String id) {
         this.id = id;
     }
-
-//    public String getPosition() {
-//        return position;
-//    }
-//
-//    public void setPosition(String position) {
-//        this.position = position;
-//    }
 
     public float getTemperature() {
         return temperature;

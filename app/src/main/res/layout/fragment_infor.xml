@@ -4,72 +4,111 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/github_contributions_light_green"
+    tools:context=".View.DeviceActivity"
     android:orientation="vertical"
-    tools:context=".View.MainActivity">
+    android:weightSum="100">
 
-    <androidx.appcompat.widget.LinearLayoutCompat
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:orientation="horizontal"
-        >
+        android:layout_height="0dp"
+        android:layout_weight="30"
+        android:background="@color/colorAccent"
+        android:layout_margin="@dimen/margin_linear">
+
         <TextView
-            android:layout_width="0dp"
+            android:layout_marginLeft="@dimen/margin_item"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/txt_temperature"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:gravity="center"
-            android:text="Temparature"
-            android:textSize="40sp"
-            android:textStyle="bold" />
+            android:layout_centerVertical="true"
+            android:text="0"
+            android:textSize="@dimen/item_text" />
 
-        <EditText
-            android:id="@+id/et_Temp"
-            android:layout_width="0dp"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:hint="0"
-            android:inputType="numberDecimal"
-            android:textColor="#fff"
-            android:textSize="30sp"
-            android:textStyle="bold" />
-    </androidx.appcompat.widget.LinearLayoutCompat>
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/temperature"
+            android:textSize="@dimen/item_text"/>
 
-    <androidx.appcompat.widget.LinearLayoutCompat
-        android:layout_marginTop="40dp"
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_width="@dimen/img_item"
+            android:layout_height="@dimen/img_item"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_item"
+            android:src="@drawable/warning_temperature" />
+    </RelativeLayout>
+
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
+        android:layout_height="0dp"
+        android:layout_weight="30"
+        android:background="@android:color/holo_blue_bright"
+        android:layout_margin="@dimen/margin_linear">
+
         <TextView
-            android:layout_width="0dp"
+            android:layout_marginLeft="@dimen/margin_item"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/txt_humidity"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:gravity="center"
-            android:text="Humidity"
-            android:textSize="40sp"
-            android:textStyle="bold" />
+            android:layout_centerVertical="true"
+            android:text="0"
+            android:textSize="@dimen/item_text" />
 
-        <EditText
-            android:id="@+id/et_Hum"
-            android:layout_width="0dp"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:hint="0"
-            android:inputType="numberDecimal"
-            android:textColor="#fff"
-            android:textSize="30sp"
-            android:textStyle="bold" />
-    </androidx.appcompat.widget.LinearLayoutCompat>
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/humidity"
+            android:textSize="@dimen/item_text"/>
 
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_width="@dimen/img_item"
+            android:layout_height="@dimen/img_item"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_item"
+            android:src="@drawable/humidity" />
+    </RelativeLayout>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_marginLeft="100dp"
-        android:text="Set Speaker" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30"
+        android:background="@android:color/darker_gray"
+        android:layout_margin="@dimen/margin_linear">
+
+        <TextView
+            android:layout_marginLeft="@dimen/margin_item"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/txt_speaker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="0"
+            android:textSize="@dimen/item_text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/speaker"
+            android:textSize="@dimen/item_text"/>
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_width="@dimen/img_item"
+            android:layout_height="@dimen/img_item"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_item"
+            android:src="@drawable/speaker" />
+    </RelativeLayout>
+
 
 </LinearLayout>
